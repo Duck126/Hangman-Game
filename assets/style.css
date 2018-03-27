@@ -1,23 +1,119 @@
-.container{
-  background-color: #666666;
-  width:100%;
-  height:1100px;
-  text-align: center;	
+html { 
+  background: url(http://emergingmama.com/wp-content/uploads/2016/04/Collision.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  background-color: transparent;
+}
+
+
+
+.gameRow{
+  background-color:#4444;
+  height: 25%;
+
+}
+.controlRow{
+  background-color:darkred;
+}
+.statArea{
+  background-color:darkred;
+  font-size: 15px;
+  text-align: left;
+}
+.guessArea{
+  background-color:#444;
+}
+.gameDisplay {
+  margin-left: 15.5%;
+  background-color: #444;
+  height:100%;
+}
+.card{
+  margin-left: 30%;
+  height: 90%;
+  margin-top:2.5%;
+}
+.letterBlanks{
+  color:darkgray;
+}
+.theWord{
+  color: darkgrey
+}
+
+
+
+
+
+
+
+
+.header1{
+  background-color: darkred;
+  border-radius: 5px;
+  margin-top: 4%;
+  
+}
+.header{
+  background-color: darkgray;
+  padding-left: 30%;
+  border-radius: 5px;
+}
+
+.elementInfo {
+  width: 80%;
+  height: 20%;
+  font-size: 40px;
+  color:white;
+  background-color: darkgray;
+  position: absolute;
+  bottom: 25%;
+  left: 2.5%;
+  position: relative;
+  z-index: auto;
+  border-radius: 5px;
+}
+
+.elementInfo1 {
+  width: 80%;
+  height: 20%;
+  font-size: 12px;
+  color:white;
+  background-color: darkred;
+  position: absolute;
+  bottom:2.5%;
+  left: 2.5%;
+  position: relative;
+  z-index: auto;
+  border-radius: 5px;
+}
+
+
+
+.container {
+  width: 100%;
+  height: 1100px;
+  text-align: center;
   font-size: 30px;
-  color: #FFFfff;
-  font-family:'Bungee Inline', cursive;
+  color:white;
+  background-color: transparent;
+  font-family: 'Bungee Inline', cursive;
 }
 
-.hangman{
-	position: absolute;
-	bottom: 0px;
-	height:50%;
-	margin: 0 auto;
+.hangman {
+  position: absolute;
+  bottom: 0px;
+  height: 50%;
+  margin: 0 auto;
 }
 
-.alphabet{
+.alphabet {
   width: 450px;
-  height:300px;
+  height: 300px;
   color: #ffffff;
   background-color: black;
 }
@@ -28,42 +124,41 @@
   height: 100px;
   font-size: 30px;
   position: absolute;
-
 }
 
-#introScreenContent{
-  margin-left: 27%;
-  max-width: 400px;
-  height: 200px;
+#introScreenContent {
+  height: 100%;
+  width: 100%;
   padding: 20px;
   color: #666666;
   background-color: white;
-  margin: 80 auto;
   text-align: center;
-  font-family:'Bungee Inline', cursive;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 90px;
+  
 }
 
-#introScreen{
-  background-color:black;
-  display: block;
-  position: absolute;
+#introScreen {
+  z-index: 2;
+  background-color: #444;
+  position: fixed;
   width: 100%;
   height: 100%;
 }
 
-.button{
-  padding:10px;
+.button {
+  padding: 10px;
   border-radius: 10px;
   width: 100px;
   text-align: center;
   cursor: hand;
   cursor: pointer;
   font-size: 14pt;
-  background-color:#666666;
-  color:#ffffff;
+  background-color: #666666;
+  color: #ffffff;
   margin: 0 auto;
 }
-div{
+
+div {
   margin-bottom: 40px;
 }
-
