@@ -1,6 +1,4 @@
-/*****************************
-Output strings
-*****************************/
+//Sets all of the needed variables for Elemental Hangman.
 function autorun() {
     var elementsNos = 109;
     var words = ["Hydrogen", "Helium", "Lithium", "Beryllium", "Boron", "Carbon", "Nitrogen", "Oxygen", "Fluorine", "Neon", "Sodium", "Magnesium", "Aluminum", "Silicon", "Phosphorus", "Sulfur", "Chlorine", "Argon", "Potassium", "Calcium", "Scandium", "Titanium", "Vanadium", "Chromium", "Manganese", "Iron", "Cobalt", "Nickel", "Copper", "Zinc", "Gallium", "Germanium", "Arsenic", "Selenium", "Bromine", "Krypton", "Rubidium", "Strontium", "Yttrium", "Zirconium", "Niobium", "Molybdenum", "Technetium", "Ruthenium", "Rhodium", "Palladium", "Silver", "Cadmium", "Indium", "Tin", "Antimony", "Tellurium", "Iodine", "Xenon", "Cesium", "Barium", "Lanthanum", "Cerium", "Praseodymium", "Neodymium", "Promethium", "Samarium", "Europium", "Gadolinium", "Terbium", "Dysprosium", "Holmium", "Erbium", "Thulium", "Ytterbium", "Lutetium", "Hafnium", "Tantalum", "Tungsten", "Rhenium", "Osmium", "Iridium", "Platinum", "Gold", "Mercury", "Thallium", "Lead", "Bismuth", "Polonium", "Astatine", "Radon", "Francium", "Radium", "Actinium", "Thorium", "Protactinium", "Uranium", "Neptunium", "Plutonium", "Americium", "Curium", "Berkelium", "Californium", "Einsteinium", "Fermium", "Mendelevium", "Nobelium", "Lawrencium", "Rutherfordium", "Dubnium", "Seaborgium", "Bohrium", "Hassium", "Meitnerium"];
@@ -22,7 +20,7 @@ function autorun() {
         document.getElementById('introScreenContent').style.display = 'none';
 
     }
-
+//Retrieves Element info from Symbol and Weight Arrays and matches them to the current Element
     function getInfo(refNumber) {
         for (var i = 0; i < 1; i++) {
             document.querySelector('.elementInfo').innerHTML += elementSymbol[refNumber];
@@ -67,15 +65,7 @@ function autorun() {
         return alphabetArray;
     }
 
-    function arrayNumber(randomWord) {
-        
-        for (var index = 0; index < words.length; index++) {
-            if (randomWord === words[index]) {
-                arrNumber.push[index];
-                console.log(arrNumber);
-            }
-        }
-    }
+    
 
 
     function initializeGame() {
